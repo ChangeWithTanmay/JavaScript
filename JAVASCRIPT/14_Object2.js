@@ -71,3 +71,7 @@ console.log(Object.entries(tinderUser)) // only use for key and values in Array 
 console.log(tinderUser.hasOwnProperty('isLoggedIn')) // true
 console.log(tinderUser.hasOwnProperty('ibvdnvjIn')) // false
 
+
+
+
+

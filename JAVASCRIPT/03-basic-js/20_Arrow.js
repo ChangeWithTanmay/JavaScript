@@ -11,7 +11,7 @@ const user={
 
 }
 
-// user.welcomeMessage()
+user.welcomeMessage()
 // user.username="sam"
 // user.welcomeMessage()
 
@@ -55,8 +55,8 @@ const chai= () =>{
 
 // ++++++ Arrow Function Object +++++
 
-const addTwo = (num1, num2) =>({username: "Tanmay"});  // Advance Method
+const addTwo = () =>({username: "Tanmay"});  // Advance Method
 
 
 
-console.log(addTwo(3,4))
+console.log(addTwo())

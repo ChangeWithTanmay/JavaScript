@@ -1,0 +1,18 @@
+div{
+    height: 150px;
+    width: 150px;
+    background-color: yellow;
+    color: rgb(0, 0, 0);
+    padding: 15px;
+    border: solid black 3px;
+    border-radius: 10px;
+}
+
+.yellow{
+    background-color: black;
+
+}
+
+.black{
+    background-color: rgb(255, 255, 0);
+}

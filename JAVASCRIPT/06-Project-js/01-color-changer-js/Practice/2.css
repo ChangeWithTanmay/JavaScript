@@ -1,0 +1,25 @@
+
+
+.switch{
+    height: 50px;
+}
+
+div{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    color: white;
+    border: solid black 2px;
+    border-radius: 10px;
+}
+
+.c-dark{
+ background-color: black;
+ color: white;
+};
+
+.b-light{
+    background-color: white;
+    color: black;
+};
+

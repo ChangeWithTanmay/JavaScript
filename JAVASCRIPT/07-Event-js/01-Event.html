@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+</head>
+
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>Amazing image</h2>
+    <div>
+        <ul id="images">
+            <li><img width="200px" id="photoshop"
+                    src="https://images.pexels.com/photos/23235164/pexels-photo-23235164/free-photo-of-a-pigeon-sitting-on-a-window-sill-looking-out-at-the-city.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="photoshop"></li>
+
+            <li><img width="200px" id="photoshop"
+                    src="https://images.pexels.com/photos/18252686/pexels-photo-18252686/free-photo-of-fishes-in-fish-soup-on-white-plate.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="photoshop"></li>
+            <li><img width="200px" id="japan"
+                    src="https://images.pexels.com/photos/24778260/pexels-photo-24778260/free-photo-of-a-view-of-a-valley-with-mountains-in-the-background.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="photoshop"></li>
+            <li><img width="200px" id="river"
+                    src="https://images.pexels.com/photos/23947602/pexels-photo-23947602/free-photo-of-a-woman-sitting-in-a-field-with-a-camera.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="photoshop"></li>
+            <li><img width="200px" id="owl"
+                    src="https://images.pexels.com/photos/17392875/pexels-photo-17392875/free-photo-of-young-woman-in-a-dress-walking-in-the-garden.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load"
+                    alt="photoshop"></li>
+            <li><img width="200px" id="prayer"
+                    src="https://images.pexels.com/photos/5047450/pexels-photo-5047450.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="photoshop"></li>
+
+            <li><a style="color: aliceblue;" href="https://www.google.com/" id="google">Google</a></li>
+        </ul>
+    </div>
+</body>
+
+<script>
+
+
+    // document.getElementById('owl').onclick=function(){
+    //     alert("owl clicked")
+    // }
+
+    // attachEvent()
+    // jQuery
+
+    // type, timestamp, defaultPrevented
+    // target, toElement, srcElement, currentTarget,
+    // clientX, clientY, screenX, screenY
+    // altkey, ctrlkey, shiftkey, keyCode
+
+    // document.getElementById('images').addEventListener('click', function (e) {
+    //     console.log(" clicked inside the ul");
+    // }, false)
+
+    // document.getElementById('owl').addEventListener('click', function (e) {
+    //     console.log("owl clicked");
+    //     e.stopPropagation()
+    // }, false)
+
+    // document.getElementById('google').addEventListener('click', function (e) {
+    //     e.preventDefault()
+    //     // e.stopPropagation()
+    //     console.log("google clicked")
+    // }, false)
+
+
+    document.querySelector('#images').addEventListener('click',function(e){
+        console.log(e.target.tagName);
+        if(e.target.tagName === 'IMG'){
+            let moveIt = e.target.parentNode;
+        moveIt.remove()
+        }
+        
+        // moveIt.parentNode.removeChild(moveIt)
+    })
+
+
+</script>
+
+</html>
